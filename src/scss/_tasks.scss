@@ -1,0 +1,42 @@
+.tasks {
+
+
+  &__item {
+    display: flex;
+    border-bottom: solid 1px rgba($medium-gray, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    transition: $opacity-transition;
+    
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 400;
+      color: $black;
+      padding: $space-s 0;
+    }
+    button {
+      padding: $space-s;
+      flex-shrink: 0;
+      svg {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .important {
+      color: $primary-color;
+      &::before{
+        content: '';
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        background-image: url('../images/important.svg');
+        background-size: cover;
+        margin-right: 0.25em;
+      }
+    }
+  }
+}

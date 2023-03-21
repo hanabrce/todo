@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>My ToDo</title>
+  <meta name="description" content="Spletna aplikacija za upravljanje opravil">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="container">
+    <h1 class="logo">My ToDo</h1>
+    <h2></h2>
+  </header>
+  <main class="container">
+    <section class="task-form">
+      <form>
+        <p>
+          <input placeholder="Opravilo" type="text" id="task">
+          <p>
+            <button class="btn--add" id="btn--add"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg></button>
+          </p>
+      </form>
+      <p>
+        <button class="btn--delete-all">izbriši vse</button>
+      </p>
+    </section>
+    <section>
+      <ul class="tasks">
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
